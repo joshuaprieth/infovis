@@ -2,10 +2,118 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>infovis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Training Through the Data</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17211c;
+      --muted: #59645e;
+      --paper: #f6f7f8;
+      --panel: #ffffff;
+      --line: #e1e4e6;
+      --shadow: 0 8px 24px rgba(23, 33, 28, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      padding: clamp(3rem, 8vw, 7rem) max(1.25rem, calc((100vw - 1080px) / 2));
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.125rem;
+      line-height: 1.75;
+    }
+
+    p {
+      max-width: 720px;
+      margin: 1.5rem auto;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    object,
+    iframe,
+    .flourish-embed {
+      display: block;
+      width: 100%;
+      max-width: 1080px;
+      margin: clamp(2rem, 5vw, 4rem) auto;
+      overflow: hidden;
+      border: 1px solid var(--line) !important;
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    object {
+      aspect-ratio: 1515.8083 / 674.88684;
+      height: auto;
+    }
+
+    iframe {
+      padding: 0.5rem;
+    }
+
+    .flourish-embed {
+      padding: clamp(0.25rem, 1vw, 0.75rem);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      object,
+      iframe,
+      .flourish-embed {
+        width: calc(100% + 1rem);
+        margin-left: -0.5rem;
+        border-radius: 4px;
+      }
+
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      body > p,
+      body > object,
+      body > iframe,
+      body > .flourish-embed {
+        animation: reveal 500ms ease-out both;
+      }
+
+      body > :nth-child(n + 4) {
+        animation-delay: 80ms;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+      }
+    }
+  </style>
 </head>
 <body>
+
+  <h2>Training Through the Data</h2>
+
+  <p>
+    Welcome!
+    In this document, we are going to explore my Strava training data from the last two years.
+  </p>
 
   <p>
     We are first interested in which types of sports I tracked, and how much of each of them.
