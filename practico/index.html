@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,14 +87,15 @@
     }
 
     @media (prefers-reduced-motion: no-preference) {
-      body > p,
-      body > object,
-      body > iframe,
-      body > .flourish-embed {
+
+      body>p,
+      body>object,
+      body>iframe,
+      body>.flourish-embed {
         animation: reveal 500ms ease-out both;
       }
 
-      body > :nth-child(n + 4) {
+      body> :nth-child(n + 4) {
         animation-delay: 80ms;
       }
 
@@ -111,11 +113,18 @@
       margin-bottom: 0;
     }
 
-    h1 + object, h1 + div, h1 + iframe {
+    h1+object,
+    h1+div,
+    h1+iframe {
+      margin-top: 0;
+    }
+
+    h1 {
       margin-top: 0;
     }
   </style>
 </head>
+
 <body>
 
   <h2>Training Through the Data</h2>
@@ -131,7 +140,7 @@
   </p>
 
   <h1>How did I train and how often?</h1>
-  <object type="image/svg+xml" data="./overview.svg"></object> 
+  <object type="image/svg+xml" data="./overview.svg"></object>
 
   <p>
     Alright, so most distance was done on the bike, but most individual sessions were runs.
@@ -139,17 +148,26 @@
   </p>
 
   <h1>How much time was spent doing each sport?</h1>
-  <iframe title="Time spent on each sport" aria-label="Line chart" id="datawrapper-chart-F69rQ" src="https://datawrapper.dwcdn.net/F69rQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="511" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
-  
+  <iframe title="Time spent on each sport" aria-label="Line chart" id="datawrapper-chart-F69rQ"
+    src="https://datawrapper.dwcdn.net/F69rQ/1/" scrolling="no" frameborder="0"
+    style="width: 0; min-width: 100% !important; border: none;" height="511" data-external="1"></iframe>
+  <script
+    type="text/javascript">(function () { function e() { window.addEventListener(`message`, function (e) { if (e.data[`datawrapper-height`] !== void 0) { var t = document.querySelectorAll(`iframe`); for (var n in e.data[`datawrapper-height`]) for (var r = 0, i; i = t[r]; r++)if (i.contentWindow === e.source) { var a = e.data[`datawrapper-height`][n] + `px`; i.style.height = a } } }) } e() })();</script>
+
   <p>
     Even though most kilometers were on the bike, we will continue with only running because there are more data points.
     The most interesting question is whether I improved over the course of my running training.
     For that, let us first consider the distance per run, by the date of the run.
   </p>
 
-  <h1>Did I improve running distances?</h1>
-  <div class="flourish-embed flourish-scatter" data-src="visualisation/30074103"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30074103/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
-  
+
+  <div class="flourish-embed flourish-scatter" data-src="visualisation/30074103">
+    <h1>Did I improve running distances?</h1>
+    <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
+        src="https://public.flourish.studio/visualisation/30074103/thumbnail" width="100%"
+        alt="scatter visualization" /></noscript>
+  </div>
+
   <p>
     We can see that I practiced running in two distinct blocks one year apart.
     In 2026, I did three longer distance runs over distances that I did not run in 2025.
@@ -161,11 +179,17 @@
     Another interesting metric is the average speed.
   </p>
 
-  <h1>Did I improve running speed?</h1>
-  <div class="flourish-embed flourish-scatter" data-src="visualisation/30074237"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30074237/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+
+  <div class="flourish-embed flourish-scatter" data-src="visualisation/30074237">
+    <h1>Did I improve running speed?</h1>
+    <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
+        src="https://public.flourish.studio/visualisation/30074237/thumbnail" width="100%"
+        alt="scatter visualization" /></noscript>
+  </div>
 
   <p>
-    Speed is slow to improve, but still we can see a slight trend where my 2026 runs are slightly faster on average than my 2025 runs.
+    Speed is slow to improve, but still we can see a slight trend where my 2026 runs are slightly faster on average than
+    my 2025 runs.
     In addition, I performed some training high-speed runs in 2026.
   </p>
 
@@ -174,13 +198,20 @@
     So, let's plot this.
   </p>
 
-  <h1>Does higher elevation gain mean slower running speed?</h1>
-  <div class="flourish-embed flourish-scatter" data-src="visualisation/30074482"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30074482/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+
+  <div class="flourish-embed flourish-scatter" data-src="visualisation/30074482">
+    <h1>Does higher elevation gain mean slower running speed?</h1>
+    <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
+        src="https://public.flourish.studio/visualisation/30074482/thumbnail" width="100%"
+        alt="scatter visualization" /></noscript>
+  </div>
 
   <p>
     We see that the correlation is only very rough.
-    This might be because I tried harder on the way up, and because for every way up there is also a way down where I can achieve a higher average speed with less effort.
+    This might be because I tried harder on the way up, and because for every way up there is also a way down where I
+    can achieve a higher average speed with less effort.
   </p>
 
 </body>
+
 </html>
